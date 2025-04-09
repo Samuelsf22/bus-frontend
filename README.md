@@ -1,54 +1,55 @@
-# React + TypeScript + Vite
+# 🚌 Bus Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
+<img src="./public/preview.webp" alt="Bus App Preview">
+</div>
 
-Currently, two official plugins are available:
+## 📌 About the Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is a **Bus Management System** designed to streamline the administration and visualization of buses, ideal for transport companies or booking platforms. Built with a modern tech stack, it supports paginated listings and a clean UI/UX.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+<div align="center">
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+![React Badge](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=fff&style=flat)
+![Redux Toolkit Badge](https://img.shields.io/badge/Redux%20Toolkit-764ABC?logo=redux&logoColor=fff&style=flat)
+![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat)
+![Spring Boot Badge](https://img.shields.io/badge/Spring%20Boot-6DB33F?logo=springboot&logoColor=fff&style=flat)
+![GitHub stars](https://img.shields.io/github/stars/Samuelsf22/bus-frontend)
+![GitHub PRs](https://img.shields.io/github/issues-pr/Samuelsf22/bus-frontend)
+![GitHub forks](https://img.shields.io/github/forks/Samuelsf22/bus-frontend)
+![GitHub issues](https://img.shields.io/github/issues/Samuelsf22/bus-frontend)
+
+</div>
+
+## 🚀 Features
+
+✅ **Paginated Bus Listing**  
+✅ **Bus Details View**  
+✅ **Responsive UI** with Tailwind CSS  
+✅ **Integrated API with Spring Boot**  
+✅ **Clean Code Structure & React Best Practices**  
+
+## 🏗️ Installation & Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/Samuelsf22/bus-frontend.git
+
+# Navigate to the project directory
+cd bus-frontend
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🔗 Backend Connection
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+This frontend application is designed to work with a backend built using **Spring Boot**.  
+If you want to test the full functionality, including bus management, pagination, and CRUD operations, you need to set up the backend service.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+👉 **Backend Repository:** [Bus Backend (Spring Boot)](https://github.com/Samuelsf22/bus-backend)
