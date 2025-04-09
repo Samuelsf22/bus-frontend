@@ -1,9 +1,3 @@
-export interface Pagination {
-    page: number;
-    size: number;
-    sort: string[];
-  }
-
 export interface Page {
     content:          Bus[];
     pageable:         Pageable;
@@ -41,11 +35,3 @@ export interface Sort {
     sorted:   boolean;
     unsorted: boolean;
 }
-export const createPaginationOption = (req: Pagination): URLSearchParams => {
-    const params = new URLSearchParams();
-    
-    params.append("page", req.page.toString());
-    params.append("size", req.size.toString());
-
-    return params;
-};

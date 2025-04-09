@@ -3,8 +3,8 @@ import { api } from "@/redux/api/api";
 const busApi = api.injectEndpoints({
   endpoints: (builder) => ({
     getAllBuses: builder.query({
-      query: () => ({
-        url: "/bus",
+      query: ({ page, size }) => ({
+        url: `/bus?page=${page}&size=${size}`,
         method: "GET",
       }),
     }),

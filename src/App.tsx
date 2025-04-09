@@ -1,9 +1,14 @@
-import { Button } from "@/components/ui/button";
+import { BrowserRouter, Route, Routes } from "react-router";
+import BusPage from "./components/bus/BusPage";
 
 function App() {
   return (
     <>
-      <Button >Hello world</Button>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<BusPage />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
