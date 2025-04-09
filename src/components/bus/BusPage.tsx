@@ -10,16 +10,18 @@ import { BusColumns } from "./BusColumns";
 
 export default function BusPage() {
   return (
-    <Card>
-      <CardHeader>
-        <CardTitle>Bus List</CardTitle>
-        <CardDescription>
-          This is the list of all buses in the system.
-        </CardDescription>
-      </CardHeader>
-      <CardContent>
-        <BusTable columns={BusColumns} />
-      </CardContent>
-    </Card>
+    <div className="flex justify-center items-center min-h-screen">
+      <Card className="w-full max-w-4xl">
+        <CardHeader>
+          <CardTitle>Bus List</CardTitle>
+          <CardDescription>
+            This is the list of all buses in the system.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <BusTable columns={BusColumns} />
+        </CardContent>
+      </Card>
+    </div>
   );
 }
